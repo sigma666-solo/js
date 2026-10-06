@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery задания</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="section">
+    <h2>1. Показать/скрыть информацию</h2>
+    <button id="toggleInfoBtn">Показать/скрыть информацию</button>
+    <div class="info-block">
+        Это блок с информацией, который появляется и исчезает при нажатии на кнопку.
+    </div>
+</div>
+
+<div class="section">
+    <h2>2. Карточка студента</h2>
+    <button id="toggleCardBtn">Изменить оформление</button>
+    <div class="student-card">
+        <strong>Иван Петров</strong>
+        <p>Группа: 201</p>
+        <p>Средний балл: 4.5</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>3. Дополнительная информация</h2>
+    <button id="toggleExtraBtn">Подробнее</button>
+    <div class="extra-info">
+        Это дополнительная информация, которая плавно появляется и исчезает. Она содержит дополнительные сведения о студенте.
+    </div>
+</div>
+
+<div class="section">
+    <h2>4. Форма поиска студента</h2>
+    <input type="text" id="searchInput" placeholder="Введите имя студента">
+    <div class="search-result">Введите имя</div>
+</div>
+
+<div class="section">
+    <h2>5. Список студентов</h2>
+    <button id="toggleListBtn">Показать/скрыть список</button>
+    <form id="studentForm">
+        <input type="text" id="studentName" placeholder="Имя студента" required>
+        <input type="number" id="studentAge" placeholder="Возраст" required>
+        <input type="number" id="studentGrade" placeholder="Средний балл" step="0.1" required>
+        <button type="submit">Добавить студента</button>
+    </form>
+    <div id="studentListContainer" class="student-list" style="display: none;"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
